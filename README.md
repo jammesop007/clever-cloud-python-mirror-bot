@@ -110,7 +110,7 @@ Note: You can limit maximum concurrent downloads by changing the value of MAX_CO
 
 I didn't try the higher configuration, calculate it by yourself. Personally, 512MB one is enough for me since I don't leech files in bulk (many processes at a time). You can try from 512MB one first, if you didn't satisfy with it, scale your app to a higher configuration.
 
-13. Name your app and I suggest you to select Canada server. Based on my testing, Canada server has better CPUs. You can experiment with the servers by yourself.
+13. Name your app and I suggest you to select Canada server. Based on my testing, Canada server has better CPUs and better speed (the fastest speed I could reach was 129MB/s which is insane). You can experiment with the servers by yourself.
 
 14. Press `I don’t need any add-ons`
 
