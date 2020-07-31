@@ -6,7 +6,7 @@
 
 The configuration available isn't meant for mass usage. You can make it for mass usage, but the bot will be easily exhausted and restarting.
 
-**This repo is experimental. There's no any support for this!**
+**This repo is experimental and unstable. There's no any support for this!**
 
 I'm not good at coding and git, so I'm sorry for untidy scripts and commits.
 
@@ -25,7 +25,8 @@ You'll get ~49GB storage and ~31-33GB free storage after deploying the bot.
 # What's the problem with this repo?
 1. Leeching from mega.nz will make the bot **stuck and die**, don't ever do that. But it seems that I don't know how to remove the mega support. If you know how to do it, please let me know. If you happened to kill your bot because of mega links, restart your app from Clever Cloud (your account must be still connected to the repo's GitHub account)
 2. If you faced an error while deploying, your email may be flooded with deployment error notification from Clever Cloud. I don't know why but the best solution is use temp mail or if you're using your personal email, delete your Clever Cloud account and make a new account with temp mail.
-3. If you found another problem, please let me know, you can also contact me **@katarina_claes** in Telegram. But I'm not good at coding, so try to solve it by yourself first.
+3. The bot will be easily die, bear with it. Always ready to restart your app from Clever Cloud. Don't forget to disable zero downtime deployment, it causes some error when restarting.
+4. If you found another problem, please let me know, you can also contact me **@katarina_claes** in Telegram. But I'm not good at coding, so try to solve it by yourself first.
  
 # How to deploy this?
 
@@ -102,13 +103,13 @@ Note: You can limit maximum concurrent downloads by changing the value of MAX_CO
 
 12. You have €20 free credits, scale it by your requirements. These arguments are based on my testing, you can do experiment with it by yourself.
 
-- **512MB RAM and Shared CPU.** This configuration makes the bot active for more than three months (~3.33 months based on my calculation). During my testing, it was capable of handling 1-3 processes, tar/unzip command isn't recommended. I think the shared CPU is gacha, you can get a good one or a bad one, I got a good CPU with Canada server. If you're lucky, you can run 4 processes with a little hiccup.
+- **512MB RAM and Shared CPU.** Not recommended! This configuration makes the bot active for more than three months (~3.33 months based on my calculation). During my testing, it was capable of handling 1-3 processes, tar/unzip command isn't recommended. I think the shared CPU is gacha, you can get a good one or a bad one, I got a good CPU with Canada server. If you're lucky, you can run 4 processes with a little hiccup. **I DON'T RECOMMEND YOU TO USE 512MB RAM, THE BOT WILL BE DIE EASILY AND THE ONLY WAY TO RESTART IT IS RESTART THE APP FROM CLEVER CLOUD**
 
-- **1GB RAM and 1 vCPU.** This configuration makes the bot active for more than one month (~1.38 months based on my calculation). Smoother when handling 1-3 processes and maybe can handle 4 processes better than the one with shared CPU (it depends on the CPU, whether it's good or not), you can try tar/unzip command (but I haven't tested it personally, do it on your own risk).
+- **1GB RAM and 1 vCPU.** Use this for a safe ride. This configuration makes the bot active for more than one month (~1.38 months based on my calculation). Smoother when handling 1-3 processes and maybe can handle 4 processes better than the one with shared CPU (it depends on the CPU, whether it's good or not), you can try tar/unzip command (but I haven't tested it personally, do it on your own risk).
 
 - **2GB RAM and 2 vCPU.** This configuration makes the bot active for about 20 days (~0.69 month or ~20.9 days based on my calculation). This was good for handling 4 processes based on my testing and it did great with a tar/unzip process.
 
-I didn't try the higher configuration, calculate it by yourself. Personally, 512MB one is enough for me since I don't leech files in bulk (many processes at a time). You can try from 512MB one first, if you didn't satisfy with it, scale your app to a higher configuration.
+I didn't try the higher configuration, calculate it by yourself. **Use the 1GB RAM configuration if you don't know this, it's a safe ride configuration to run the bot**
 
 13. Name your app and I suggest you to select Canada server. Based on my testing, Canada server has better CPUs and better speed (the fastest speed I could reach was 129MB/s which is insane). You can experiment with the servers by yourself.
 
