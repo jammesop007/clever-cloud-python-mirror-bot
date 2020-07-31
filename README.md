@@ -25,7 +25,7 @@ You'll get ~49GB storage and ~31-33GB free storage after deploying the bot.
 # What's the problem with this repo?
 1. Leeching from mega.nz will make the bot **stuck and die**, don't ever do that. But it seems that I don't know how to remove the mega support. If you know how to do it, please let me know. If you happened to kill your bot because of mega links, restart your app from Clever Cloud (your account must be still connected to the repo's GitHub account)
 2. If you faced an error while deploying, your email may be flooded with deployment error notification from Clever Cloud. I don't know why but the best solution is use temp mail or if you're using your personal email, delete your Clever Cloud account and make a new account with temp mail.
-3. The bot will be easily die, bear with it. Always ready to restart your app from Clever Cloud. Don't forget to disable zero downtime deployment, it causes some error when restarting.
+3. The bot will be easily die if you exceeded the RAM and CPU usage. Always ready to restart your app from Clever Cloud. Don't forget to disable zero downtime deployment, it causes some error when restarting.
 4. If you found another problem, please let me know, you can also contact me **@katarina_claes** in Telegram. But I'm not good at coding, so try to solve it by yourself first.
  
 # How to deploy this?
@@ -50,7 +50,7 @@ Without service accounts, you only can leech up to 750GB/day.
 - Rename it to `credentials.json`
 - Visit [Google API page](https://console.developers.google.com/apis/library)
 - Search for Drive and enable it if it is disabled
-- Copy the script from https://github.com/magneto261290/magneto-python-aria/blob/master/generate_drive_token.py and create a new file named `generate_drive_token.py` and paste the code inside. Move that file to the `credentials.json` directory and then open your terminal/cmd from that directory (for Windows, press SHIFT + Right click > Open command prompt here) and run this command (one by one), you must have pip and python first.
+- Download the script from https://t.me/Pinkiechan/1210 and move that file to the `credentials.json` directory and then open your terminal/cmd from that directory (for Windows, press SHIFT + Right click > Open command prompt here) and run this command (one by one per line), you must have pip and python first.
 ```
 pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
 python3 generate_drive_token.py
@@ -58,8 +58,6 @@ python3 generate_drive_token.py
 (Use `python` if `python3` doesn't work)
 - Now you have `credentials.json` and `token.pickle`
 - Upload `credentials.json` and `token.pickle` to the root of the repo, then skip to step 5. 
-
-(I haven't tested the non-service accounts method, if it's unusable, then use the service accounts one) 
 
 ----------
 
@@ -103,7 +101,7 @@ Note: You can limit maximum concurrent downloads by changing the value of MAX_CO
 
 12. You have €20 free credits, scale it by your requirements. These arguments are based on my testing, you can do experiment with it by yourself.
 
-- **512MB RAM and Shared CPU.** Not recommended! This configuration makes the bot active for more than three months (~3.33 months based on my calculation). During my testing, it was capable of handling 1-3 processes, tar/unzip command isn't recommended. I think the shared CPU is gacha, you can get a good one or a bad one, I got a good CPU with Canada server. If you're lucky, you can run 4 processes with a little hiccup. **I DON'T RECOMMEND YOU TO USE 512MB RAM, THE BOT WILL DIE EASILY AND THE ONLY WAY TO RESTART IT IS RESTART THE APP FROM CLEVER CLOUD**
+- **512MB RAM and Shared CPU.** Not recommended! This configuration makes the bot active for more than three months (~3.33 months based on my calculation). During my testing, it was capable of handling 1-3 processes, tar/unzip command isn't recommended. I think the shared CPU is gacha, you can get a good one or a bad one, I got a good CPU with Canada server. If you're lucky, you can run 4 processes with a little hiccup. **I DON'T RECOMMEND YOU TO USE 512MB RAM, IT'S ONLY GOOD FOR LIGHT USAGE, OTHERWISE THE BOT WILL DIE EASILY AND THE ONLY WAY TO RESTART IT IS RESTART THE APP FROM CLEVER CLOUD. YOU CAN SELECT IT IF YOU WANT TO EXPERIMENT WITH THIS CONFIGURATION**
 
 - **1GB RAM and 1 vCPU.** Use this for a safe ride. This configuration makes the bot active for more than one month (~1.38 months based on my calculation). Smoother when handling 1-3 processes and maybe can handle 4 processes better than the one with shared CPU (it depends on the CPU, whether it's good or not), you can try tar/unzip command (but I haven't tested it personally, do it on your own risk).
 
