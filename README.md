@@ -1,6 +1,7 @@
 <img src="https://www.clever-cloud.com/images/brand-assets/logos/v2/logo_on_white.png" alt="Clever Cloud"/>
 
 
+# I'M SORRY BRO, CLEVER CLOUD SEEMS TO BE BANNING APPS/ACCOUNTS THAT ARE USING THIS REPO. PLEASE DON'T DEPLOY THIS REPO TO CC ANYMORE AND DON'T ASK ME FOR ANY SUPPORT!
 # FOR PERSONAL USAGE ONLY
 
 
