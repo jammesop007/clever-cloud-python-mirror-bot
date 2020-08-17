@@ -51,7 +51,7 @@ Without service accounts, you only can leech up to 750GB/day.
 - Rename it to `credentials.json`
 - Visit [Google API page](https://console.developers.google.com/apis/library)
 - Search for Drive and enable it if it is disabled
-- Download the script from https://t.me/Pinkiechan/1210 and move that file to the `credentials.json` directory and then open your terminal/cmd from that directory (for Windows, press SHIFT + Right click > Open command prompt here) and run this command (one by one per line), you must have pip and python first.
+- Download the script from https://t.me/pythonmirrorsupport/48805 and move that file to the `credentials.json` directory and then open your terminal/cmd from that directory (for Windows, press SHIFT + Right click > Open command prompt here) and run this command (one by one per line), you must have pip and python first.
 ```
 pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
 python3 generate_drive_token.py
